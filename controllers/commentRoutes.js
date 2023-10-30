@@ -1,3 +1,2 @@
 const router = require('express').Router();
-const article = require('../../models');
-
+const comment = require('../../models');

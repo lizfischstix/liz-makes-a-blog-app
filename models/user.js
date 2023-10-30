@@ -11,7 +11,10 @@ User.init(
             allowNull: false,
             primaryKey: true,
         },
-        
+        user_password: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        }
     },
     {
         sequelize,
