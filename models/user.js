@@ -6,10 +6,15 @@ class User extends Model {}
 
 User.init(
     {
+        id: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            primaryKey: true,
+            autoIncrement: true,
+        },
         user_name: {
             type: DataTypes.STRING,
             allowNull: false,
-            primaryKey: true,
         },
         user_password: {
             type: DataTypes.STRING,
@@ -20,7 +25,7 @@ User.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user',
+        modelName: 'User',
     }
 );
 
